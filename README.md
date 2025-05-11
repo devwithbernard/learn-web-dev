@@ -8,5 +8,9 @@ Learn Web Development
     * head
     * body
 
+## HTML Elements
+    They are several HTML Elements such as Headings, Paragraph, Division, Section, ...
+    
+
 
 

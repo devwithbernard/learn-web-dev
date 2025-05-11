@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html elements</title>
+    <style>
+        .menu-list{
+            list-style-type: none;
+            margin: 0;
+        }
+        .menu-list-item {
+            padding: 2px;
+            margin: 10px 0;
+            .link{
+                text-decoration: none;
+                color: black;
+            }
+            &:hover{
+                background: green;
+            }
+        }
+    </style>
 </head>
 <body style="font-family: Roboto, sans-serif">
     <header style="display: flex; justify-items: center; justify-content: space-around; margin-top:10px; padding: 5px 10px; background-color: rgb(227, 241, 227); border-radius: 5px;">
@@ -58,5 +75,29 @@
         <a href="#pandas" style="margin: 0 10px; text-decoration: none; color: white; font-weight: bold;">PANDAS</a>
         <a href="#nodejs" style="margin: 0 10px; text-decoration: none; color: white; font-weight: bold;">NODE JS</a>
     </div>
+    <main id="container" style="display: flex; gap: 1rem">
+        <section id="side-menu" style="position: static; left: 10px; top: 0; left: 0; background: #CCC; padding: 10px; margin-top:10px">
+            <div>
+                <h4 style="margin-top: 0; font-size: 1.4rem">HTML Tutorial</h4>
+                <ul class="menu-list">
+                    <li class="menu-list-item">
+                        <a class="link" href="#home">HTML HOME</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="link" href="#introduction">HTML Introduction</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="link" href="#editors">HTML Editors</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="link" href="#attributes">HTML Attributes</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="link" href="#headings">HTML Headings</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
