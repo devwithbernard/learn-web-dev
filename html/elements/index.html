@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html elements</title>
     <style>
+        #side-menu {
+            height: fit-content;
+        }
         .menu-list{
             list-style-type: none;
             margin: 0;
@@ -20,6 +23,37 @@
                 background: green;
             }
         }
+        .main-content{
+            margin: 10px;
+            width:80%;
+            position: relative;
+            padding: 0 10px;
+        }
+        .previous-next-btns{
+            display: flex;
+            justify-content: space-between;
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 5px;
+                background-color: green;
+                border-radius: 5px;
+                font-size: 17px;
+            }
+        }
+        .hr{
+            background-color: #AAA;
+            height: .3px;
+        }
+        pre{
+            margin: 0 10px;
+            font-size: 18px;
+            font-style: italic;
+            .tag-name{
+                color: red;
+            }
+        }
+
     </style>
 </head>
 <body style="font-family: Roboto, sans-serif">
@@ -96,6 +130,27 @@
                         <a class="link" href="#headings">HTML Headings</a>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <section class="main-content">
+            <h1>HTML Elements</h1>
+            <div class="previous-next-btns">
+                <a href="#previous">Previous</a>
+                <a href="#next">Next</a>
+            </div>
+            <hr class="hr">
+            <p>An HTML element is defined by start tag, some content, and an end tage.</p>
+            <hr class=".hr">
+            <div>
+                <h3>HTML Elements</h3>
+                <p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+                <p>
+                    <pre>&lt;<span class="tag-name">tagname</span>&gt;Content goes here ...&lt;<span class="tag-name">/tagname</span>&gt;</pre>
+                </p>
+				<p>Examples of some HTML elements:</p>
+				<p>
+				<pre>&lt;<span class="tag-name">h1</span>&gt;My First Heading&lt;<span class="tag-name">/h1</span>&gt;</pre>
+				</p>
             </div>
         </section>
     </main>
